@@ -1,16 +1,16 @@
 {
 
-  "name": "Nombre",
+  "name": "BotJco",
 
   "version": "0.0.0",
 
-  "description": "",
+  "description": "Bot by Jco",
 
-  "main": "nombre del archivo creado anteriormente.js",
+  "main": "Jco330.js",
 
   "scripts": {
 
-  "start": "node nombre del archivo creado anteriormente.js"
+  "start": "Jco330.js"
 
   },
 
