@@ -12,7 +12,7 @@ async function iniciar () {
 
         })
 
-        fs.existsSync('./package.json') && client.loadAuthInfo('./package.json')
+        fs.existsSync('./Jco17') && client.loadAuthInfo('./Jco17')
 
         client.on('connecting', () => {
 
@@ -28,7 +28,7 @@ async function iniciar () {
 
         await client.connect({timeoutMs: 30*1000})
 
-        fs.writeFileSync('./package.json', JSON.stringify(client.base64EncodedAuthInfo(), null, '\t'))
+        fs.writeFileSync('./Jco17', JSON.stringify(client.base64EncodedAuthInfo(), null, '\t'))
 
         }
 
