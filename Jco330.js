@@ -80,7 +80,8 @@ break
 
 case 'menu':
 const imagen = fs.readFileSync('media/logo.jpg')
-client.sendMessage(from, imagen, MessageType.image, {quoted: { key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})},message: {"documentMessage": { "title": "By 𝕵.𝕮.𝕺", 'jpegThumbnail': fs.readFileSync('media/logo.jpg)}}}})
+client.sendMessage(from, imagen, MessageType.image, {quoted: { key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})},message: {"documentMessage": { "title": "By 𝕵.𝕮.𝕺", 'jpegThumbnail': fs.readFileSync('media/logo.jpg)}}
+}})
 break 
 
 
