@@ -72,6 +72,18 @@ const isMe = senderNumber == botNumber
 const conts = jco.key.fromMe ? client.user.jid : client.contacts[sender] || { notify: jid.replace(/@.+/, '') }
 const pushname = jco.key.fromMe ? client.user.name : conts.notify || conts.vname || conts.name || '-'
 
+
+const boton = (para, contenido, footer, botones = [], Jco17 = {}) => {
+const buttonMessage = {
+contentText: contenido,
+footerText: footer,
+buttons: botones,
+headerType: 1
+}
+client.sendMessage(para, buttonMessage, MessageType.buttonsMessage, Jco17)
+}
+
+
 switch (command) {
 
 case 'bot':
@@ -89,11 +101,53 @@ const imagen = fs.readFileSync('media/logo.jpg')
 client.sendMessage(from, imagen, MessageType.image, {quoted: { key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})},message: {"documentMessage": { "title": "By 𝕵.𝕮.𝕺", 'jpegThumbnail': fs.readFileSync('media/logo.jpg')}}
 }})
 break
+                
+case 'hentai':
+const video = fs.readFileSync('./media/video.mp4')
+client.sendMessage(from, video, MessageType.video, {quoted: jco, mimetype: 'video/mp4', caption: 'Disfrutalo XD', duration: 120})
+break
 
 case 'musicaepica':
 const audio = fs.readFileSync('./media/audio.mp3')
 client.sendMessage(from, audio, MessageType.audio, {quoted: jco, mimetype: 'audio/mp3', duration: -9999999})
-break            
+break   
+                
+case 'botones':
+boton(from, 'Hola', `${pushname}`, [{buttonId: 'b1', buttonText: {displayText: 'Click Aqui'}, type: 1}])           
+break
+                
+case 'lista':
+let lista = client.prepareMessageFromContent(from,{
+"listMessage": {
+"title": `${pushname}`,
+"description": `Este es un Mensaje de lista`,
+"buttonText": "Click Aqui",
+"listType": "SINGLE_SELECT",
+"sections": [
+{ "title": `Seccion 1`,
+"rows": [
+{
+"title": 'Lista 1',
+"description": 'Desc 1',
+"rowId": `row1`
+}
+]
+},
+{
+"title": `Seccion 2`,
+"rows": [
+{
+"title": 'Lista 2',
+"description": 'Desc 2',
+"rowId": `row 2`
+}
+]    
+}
+]
+}
+}, {quoted: jco})
+client.relayWAMessage(lista)          
+break
         
 }
 
