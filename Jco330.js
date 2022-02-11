@@ -43,7 +43,7 @@ const body = jco.message.conversation || jco.message[type].caption || jco.messag
 chats = (type === 'conversation') ? jco.message.conversation : (type === 'extendedTextMessage') ? jco.message.extendedTextMessage.text : ''
 budy = (type === 'conversation' && jco.message.conversation.startsWith(prefix)) ? jco.message.conversation : (type == 'imageMessage') && jco.message.imageMessage.caption.startsWith(prefix) ? jco.message.imageMessage.caption : (type == 'videoMessage') && jco.message.videoMessage.caption.startsWith(prefix) ? jco.message.videoMessage.caption : (type == 'extendedTextMessage') && jco.message.extendedTextMessage.text.startsWith(prefix) ? jco.message.extendedTextMessage.text : ''
 
-if (prefix != "privjco") {
+if (prefix != ".") {
 if (!body.startsWith(prefix)) {
 cmd = false
 comm = ""
