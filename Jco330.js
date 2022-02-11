@@ -92,7 +92,7 @@ break
 
 case '.musica1':
 const audio = fs.readFileSync('media/audio.mp3')
-client.sendMessage(from, audio, MessageType.audio)
+client.sendMessage(from, audio, MessageType.audio, Mymetipe)
 break 
                 
 case '.musica2':
@@ -112,7 +112,7 @@ break
                 
 case '.musica5':
 const audio = fs.readFileSync('media/audio5.mp3')
-client.sendMessage(from, audio, MessageType.audio)
+client.sendMessage(from, audio, MessageType, Mymetipe.audio)
 break
         
 }
