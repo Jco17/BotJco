@@ -1,4 +1,4 @@
-const { WAConnection, MessageType } = require('@adiwajshing/baileys');
+const { WAConnection, MessageType, Mymetipe, } = require('@adiwajshing/baileys');
 const fs = require('fs');
 const prefix = '.'
 
@@ -75,7 +75,7 @@ const pushname = jco.key.fromMe ? client.user.name : conts.notify || conts.vname
 switch (command) {
 
 case '.bot':
-client.sendMessage(from, 'Hola que tal, para continuar pon el comando .menu  :)        𝕵.𝕮.𝕺', text, {quoted: { key: {
+client.sendMessage(from, '*Hola que tal, para continuar pon el comando .menu  :)*  (By 𝕵.𝕮.𝕺)', text, {quoted: { key: {
 fromMe: false,
 participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
 },
@@ -91,15 +91,15 @@ client.sendMessage(from, imagen, MessageType.image, {quoted: { key: {fromMe: fal
 break
 
 case '.rolita':
-const audio = fs.readFileSync('media/audio.mp3')
-client.sendMessage(from, audio, MessageType.audio, {quoted: { key: {
+const audio = fs.readFileSync('.media/audio.mp3')
+client.sendMessage(from, audio, MessageType.audio, {quoted: jco. mimetype: 'audio/mp3', {quoted: { key: {
 fromMe: false,
 participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
 },
 message: {
 "documentMessage": { "title": "By 𝕵.𝕮.𝕺", 'jpegThumbnail': fs.readFileSync('media/logo.jpg')}}
-}})
-break 
+}}
+})
                 
 }
 
