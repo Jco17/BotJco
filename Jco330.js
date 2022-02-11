@@ -75,8 +75,8 @@ const pushname = jco.key.fromMe ? client.user.name : conts.notify || conts.vname
 switch (command) {
 
 case '.menu':
-client.sendMessage(from, '
- ╔══════════╗
+client.sendMessage(from,
+'╔══════════╗
  ☬ ❯──By 𝕵.𝕮.𝕺──❮ ☬
  ╚══════════╝
 
