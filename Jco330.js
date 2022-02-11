@@ -74,7 +74,7 @@ const pushname = jco.key.fromMe ? client.user.name : conts.notify || conts.vname
 
 switch (command) {
 
-case '.menu':
+case '.bot':
 client.sendMessage(from, 'Hola que tal, para continuar pon el comando .menu  :)        𝕵.𝕮.𝕺', text, {quoted: { key: {
 fromMe: false,
 participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
