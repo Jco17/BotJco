@@ -84,7 +84,6 @@ client.sendMessage(from, imagen, MessageType.image, {quoted: { key: {fromMe: fal
 }})
 break 
 
-
                
 }
 
