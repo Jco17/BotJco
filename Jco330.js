@@ -75,41 +75,8 @@ const pushname = jco.key.fromMe ? client.user.name : conts.notify || conts.vname
 switch (command) {
 
 case '.menu':
-client.sendMessage(from, '╭─────────────❀
-│⸻✫꯭𝙈꯭𝙀꯭𝙉꯭𝙐꯭✫
-│
-│.rolita
-│
-╰─────────────
-
-☬ ══════ ⋆★⋆ ══════☬
-
-╭────────────❀
-│⸻◈𝙋꯭𝙍𝙄꯭𝙑𝘼꯭𝘿꯭𝙊◈
-│
-│▷ .bugG
-│
-│▷ .megabug
-│
-│▷ .generar+1
-│
-│▷ .crashinmune
-│
-│▷ .phishingwsp
-│
-│▷ .dox
-│
-│▷ .nuke
-│
-│▷ .bannumber
-│
-│▷ .autoadmin
-│
-│▷ ❝Próximamente mas❞
-│
-╰────────────❀
-
-❐ 『▷ By 𝕵.𝕮.𝕺©』 ❐', text, {quoted: { key: {
+client.sendMessage(from, 'Hola que tal, para continuar pon el comando .menu  :)
+▷𝕵.𝕮.𝕺 ©', text, {quoted: { key: {
 fromMe: false,
 participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
 },
