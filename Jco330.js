@@ -92,13 +92,7 @@ break
 
 case '.musica1':
 const audio = fs.readFileSync('media/audio.mp3')
-client.sendMessage(from, audio, MessageType.audio, {quoted: jco, mimetype: 'audio/mp3', quoted: { key: {
-fromMe: false,
-participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
-},
-message: {
-"documentMessage": { "title": "By 𝕵.𝕮.𝕺", 'jpegThumbnail': fs.readFileSync('media/logo.jpg')}}        
-}})
+client.sendMessage(from, audio, MessageType.audio, {quoted: jco, mimetype: 'audio/mp3'})
 break
         
 }
