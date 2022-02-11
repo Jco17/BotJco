@@ -96,22 +96,22 @@ client.sendMessage(from, audio, MessageType.audio, Mymetipe)
 break 
                 
 case '.musica2':
-const audio = fs.readFileSync('media/audio2.mp3')
+const audio2 = fs.readFileSync('media/audio2.mp3')
 client.sendMessage(from, 'media/audio2.mp3', MessageType.audio)
 break
                 
 case '.musica3':
-const audio = fs.readFileSync('media/audio3.mp3')
+const audio3 = fs.readFileSync('media/audio3.mp3')
 client.sendMessage(from, 'media/audio3.mp3', MessageType.audio)
 break
                 
 case '.musica4':
-const audio = fs.readFileSync('media/audio4.mp3')
+const audio4 = fs.readFileSync('media/audio4.mp3')
 client.sendMessage(from, 'media/audio4.mp3', MessageType.audio)
 break
                 
 case '.musica5':
-const audio = fs.readFileSync('media/audio5.mp3')
+const audio5 = fs.readFileSync('media/audio5.mp3')
 client.sendMessage(from, 'media/audio6.mp3', MessageType, Mymetipe.audio)
 break
         
