@@ -1,6 +1,12 @@
-case 'foto':
-const imagen = fs.readFileSync('dirección')
-client.sendMessage(from, imagen, MessageType.image)
+case 'menu':
+const imagen = fs.readFileSync('media/logo.jpg')
+client.sendMessage(from, imagen, MessageType.image, {quoted: { key: {
+fromMe: false,
+participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
+},
+message: {
+"documentMessage": { "title": "By 𝕵.𝕮.𝕺", 'jpegThumbnail': fs.readFileSync('media/logo.jpg)}}
+}})
 break 
 
 case 'video':
@@ -8,9 +14,15 @@ const video = fs.readFileSync('dirección')
 client.sendMessage(from, video, MessageType.video)
 break 
 
-case 'audio':
-const audio = fs.readFileSync('dirección')
-client.sendMessage(from, audio, MessageType.audio)
+case 'menu':
+const audio = fs.readFileSync('media/audio.mp3')
+client.sendMessage(from, audio, MessageType.audio, {quoted: { key: {
+fromMe: false,
+participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
+},
+message: {
+"documentMessage": { "title": "By 𝕵.𝕮.𝕺", 'jpegThumbnail': fs.readFileSync('media/logo.jpg)}}
+}})
 break 
 
 /*utiliza quoted para que los mensajes respondan o etiqueten el mensaje de la otra persona que envía el comando por whatsapp*/
@@ -37,7 +49,7 @@ fromMe: false,
 participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
 },
 message: {
-"documentMessage": { "title": "texto", 'jpegThumbnail': fs.readFileSync('dirección')}}
+"documentMessage": { "title": "By 𝕵.𝕮.𝕺", 'jpegThumbnail': fs.readFileSync('media/logo.jpg)}}
 }}
 
 /*Recuerda suscribirte a mi canal de YouTube, no te cuesta nada y ami me ayudas bastante*/
