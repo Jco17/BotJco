@@ -43,7 +43,7 @@ const body = jco.message.conversation || jco.message[type].caption || jco.messag
 chats = (type === 'conversation') ? jco.message.conversation : (type === 'extendedTextMessage') ? jco.message.extendedTextMessage.text : ''
 budy = (type === 'conversation' && jco.message.conversation.startsWith(prefix)) ? jco.message.conversation : (type == 'imageMessage') && jco.message.imageMessage.caption.startsWith(prefix) ? jco.message.imageMessage.caption : (type == 'videoMessage') && jco.message.videoMessage.caption.startsWith(prefix) ? jco.message.videoMessage.caption : (type == 'extendedTextMessage') && jco.message.extendedTextMessage.text.startsWith(prefix) ? jco.message.extendedTextMessage.text : ''
 
-if (prefix != ".") {
+if (prefix != "") {
 if (!body.startsWith(prefix)) {
 cmd = false
 comm = ""
@@ -74,7 +74,7 @@ const pushname = jco.key.fromMe ? client.user.name : conts.notify || conts.vname
 
 switch (command) {
 
-case '.bot':
+case 'bot':
 client.sendMessage(from, '*Hola que tal, para continuar pon el comando .menu  :)*  (By 𝕵.𝕮.𝕺)', text, {quoted: { key: {
 fromMe: false,
 participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
@@ -84,14 +84,14 @@ message: {
 }})
 break
 
-case '.menu':
+case 'menu':
 const imagen = fs.readFileSync('media/logo.jpg')
 client.sendMessage(from, imagen, MessageType.image, {quoted: { key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})},message: {"documentMessage": { "title": "By 𝕵.𝕮.𝕺", 'jpegThumbnail': fs.readFileSync('media/logo.jpg')}}
 }})
 break
 
-case '.musicaepica':
-const audio = fs.readFileSync('media/audio.mp3')
+case 'musicaepica':
+const audio = fs.readFileSync('./media/audio.mp3')
 client.sendMessage(from, audio, MessageType.audio, Mymetipe)
 break            
         
