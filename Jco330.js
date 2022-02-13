@@ -112,7 +112,7 @@ client.sendMessage(from, audio, MessageType.audio, {quoted: jco, mimetype: 'audi
 break   
                 
 case 'nuevo':
-nuevo = `🤔 *Que hay de nuevo?* 🤗
+`🤔 *Que hay de nuevo?* 🤗
 - _Menu 6_
 *Nuevo comando belle*
 - _Menu de Stickers:_
