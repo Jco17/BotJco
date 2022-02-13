@@ -230,7 +230,7 @@ message: {
 
 break
 
-case 'bugbutton_rc':
+case 'bugbuttonjco':
                                     
 									rc = `${rclk}`
 								    rc2 = `${rclk2}`
