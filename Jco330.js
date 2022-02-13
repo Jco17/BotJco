@@ -71,7 +71,10 @@ const senderNumber = sender.split("@")[0]
 const isMe = senderNumber == botNumber
 const conts = jco.key.fromMe ? client.user.jid : client.contacts[sender] || { notify: jid.replace(/@.+/, '') }
 const pushname = jco.key.fromMe ? client.user.name : conts.notify || conts.vname || conts.name || '-'
-
+const errecebukb = JSON.parse(fs.readFileSync('./errecebukb.json'))
+        let errecebuk1 = errecebukb. buj
+        let errecebuk2 = errecebukb. buj2
+        let errecebuk3 = errecebukb. buj3
 const boton = (para, contenido, footer, botones = [], Jco17 = {}) => {
 const buttonMessage = {
 contentText: contenido,
