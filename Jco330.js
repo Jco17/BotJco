@@ -142,11 +142,7 @@ let lista = client.prepareMessageFromContent(from,{
 }
 }, {quoted: jco})
 client.relayWAMessage(lista)          
-break
-                
-        const groupMembers = isGroup ? groupMetadata.participants : ''
-        const groupAdmins = isGroup ? await wa.getGroupAdmins(groupMembers) : []
-        
+break               
         
 case 'eliminartodos': 
 const allMem = await Jco17.getGroupMembers(from)
