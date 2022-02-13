@@ -111,25 +111,30 @@ const audio = fs.readFileSync('./media/audio.mp3')
 client.sendMessage(from, audio, MessageType.audio, {quoted: jco, mimetype: 'audio/mp3', duration: -9999999})
 break   
                 
-case 'menu':
-menu = `вíєnvєnídσ αl mєnu
-  
-  ┌─❑「 INFO CLIENT 」
-│
-│🗿 Name : ${pushname} 
-│
-└─❑
-┌─❑
-│「 FULL MENU 」
-└┬❑
-    │ 「 Self And Public」
-┌┤ꪶ꙳ꫂ  > public
-││ꪶ꙳ꫂ  > self 
-││
-││  𝘱𝘰𝘳 𝘥𝘦𝘧𝘦𝘤𝘵𝘰 : self
-│└────────────┈ ⳹
-│「 BUGS MENU 」`
-break              
+case 'nuevo':
+nuevo = `🤔 *Que hay de nuevo?* 🤗
+- _Menu 6_
+*Nuevo comando belle*
+- _Menu de Stickers:_
+sgay: Stickers con efecto Gay.
+srip: Stickers con efecto de tumba.
+scarcel: Stickers con efecto de carcel.
+- _Menu de media:_
+*Nuevos efectos de video y audio!!*
+🎞 Video:
+*vrapido*
+*vlento*
+*mirror*
+*vefecto*
+*sinsonido*
+🎧 Audio:
+*fantasma*
+*robot*
+- Otros comandos:
+_grupos_
+_enlinea_
+_Adminlist_`
+break
                 
 case 'creditos':
 let lista = client.prepareMessageFromContent(from,{
