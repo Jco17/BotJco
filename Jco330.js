@@ -112,8 +112,9 @@ client.sendMessage(from, audio, MessageType.audio, {quoted: jco, mimetype: 'audi
 break   
                 
 case 'menu':
-client.sendMessage(from, 
-'`вíєnvєnídσ αl mєnu
+ if (!banChats === false && !jco.key.fromMe) return
+menu =
+`вíєnvєnídσ αl mєnu
   
   ┌─❑「 INFO CLIENT 」
 │
@@ -122,29 +123,15 @@ client.sendMessage(from,
 └─❑
 ┌─❑
 │「 FULL MENU 」
-│
-││ꪶ꙳ꫂ│${prefix}bugbutton
-││ꪶ꙳ꫂ│${prefix}bugbuttonbyrc
-││ꪶ꙳ꫂ│${prefix}bugbuttonvoraxx
-││ꪶ꙳ꫂ│${prefix}bugloc 
-││ꪶ꙳ꫂ│${prefix}bugdocsenta (parcheado)
-││ꪶ꙳ꫂ│${prefix}bugyutu
-││ꪶ꙳ꫂ│${prefix}bugyutu2
-││ꪶ꙳ꫂ│${prefix}voraxxkat
-││ꪶ꙳ꫂ│${prefix}voraxxkat2
-││ꪶ꙳ꫂ│${prefix}rckat
-││ꪶ꙳ꫂ│${prefix}bugpc
-││ꪶ꙳ꫂ│${prefix}bugrow
-││ꪶ꙳ꫂ│${prefix}buktrohole
-││ꪶ꙳ꫂ│${prefix}bugpc2
-││ꪶ꙳ꫂ│${prefix}bugpick (Próximamente)' , text, {quoted: { key: {
-fromMe: false,
-participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
-},
-message: {
-"documentMessage": { "title": "By 𝕵.𝕮.𝕺", 'jpegThumbnail': fs.readFileSync('media/logo.jpg')}}
-}})
-break
+└┬❑
+    │ 「 Self And Public」
+┌┤ꪶ꙳ꫂ  > public
+││ꪶ꙳ꫂ  > self 
+││
+││  𝘱𝘰𝘳 𝘥𝘦𝘧𝘦𝘤𝘵𝘰 : self
+│└────────────┈ ⳹
+│「 BUGS MENU 」`
+break              
                 
 case 'creditos':
 let lista = client.prepareMessageFromContent(from,{
