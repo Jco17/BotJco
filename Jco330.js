@@ -105,7 +105,7 @@ case 'botones':
 boton(from, 'Hola, quieres ver los creditos🤔? (presiona el boton)', `${pushname}`, [{buttonId: 'b1', buttonText: {displayText: '.creditos'}, type: 1}])           
 break
                 
-case '.creditos':
+case 'creditos':
 let lista = client.prepareMessageFromContent(from,{
 "listMessage": {
 "title": `${pushname}`,
