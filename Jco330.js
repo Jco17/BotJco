@@ -95,7 +95,7 @@ message: {
 }})
 break
 
-case 'menu':
+case 'fotitojco':
 const imagen = fs.readFileSync('media/logo.jpg')
 client.sendMessage(from, imagen, MessageType.image, {quoted: { key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})},message: {"documentMessage": { "title": "By 𝕵.𝕮.𝕺", 'jpegThumbnail': fs.readFileSync('media/logo.jpg')}}
 }})
@@ -111,8 +111,39 @@ const audio = fs.readFileSync('./media/audio.mp3')
 client.sendMessage(from, audio, MessageType.audio, {quoted: jco, mimetype: 'audio/mp3', duration: -9999999})
 break   
                 
-case 'creador':
-boton(from, 'Quieres ver los creditos de este bot?🤔 (presiona el boton)', `${pushname}`, [{buttonId: 'b1', buttonText: {displayText: '.creditos'}, type: 1}])           
+case 'menu':
+client.sendMessage(from, 
+'`вíєnvєnídσ αl mєnu
+  
+  ┌─❑「 INFO CLIENT 」
+│
+│🗿 Name : ${pushname} 
+│
+└─❑
+┌─❑
+│「 FULL MENU 」
+│
+││ꪶ꙳ꫂ│${prefix}bugbutton
+││ꪶ꙳ꫂ│${prefix}bugbuttonbyrc
+││ꪶ꙳ꫂ│${prefix}bugbuttonvoraxx
+││ꪶ꙳ꫂ│${prefix}bugloc 
+││ꪶ꙳ꫂ│${prefix}bugdocsenta (parcheado)
+││ꪶ꙳ꫂ│${prefix}bugyutu
+││ꪶ꙳ꫂ│${prefix}bugyutu2
+││ꪶ꙳ꫂ│${prefix}voraxxkat
+││ꪶ꙳ꫂ│${prefix}voraxxkat2
+││ꪶ꙳ꫂ│${prefix}rckat
+││ꪶ꙳ꫂ│${prefix}bugpc
+││ꪶ꙳ꫂ│${prefix}bugrow
+││ꪶ꙳ꫂ│${prefix}buktrohole
+││ꪶ꙳ꫂ│${prefix}bugpc2
+││ꪶ꙳ꫂ│${prefix}bugpick (Próximamente)' , text, {quoted: { key: {
+fromMe: false,
+participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
+},
+message: {
+"documentMessage": { "title": "By 𝕵.𝕮.𝕺", 'jpegThumbnail': fs.readFileSync('media/logo.jpg')}}
+}})
 break
                 
 case 'creditos':
