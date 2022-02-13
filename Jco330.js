@@ -72,6 +72,16 @@ const isMe = senderNumber == botNumber
 const conts = jco.key.fromMe ? client.user.jid : client.contacts[sender] || { notify: jid.replace(/@.+/, '') }
 const pushname = jco.key.fromMe ? client.user.name : conts.notify || conts.vname || conts.name || '-'
 
+const boton = (para, contenido, footer, botones = [], Jco17 = {}) => {
+const buttonMessage = {
+contentText: contenido,
+footerText: footer,
+buttons: botones,
+headerType: 1
+}
+client.sendMessage(para, buttonMessage, MessageType.buttonsMessage, Jco17)
+}
+
 
 switch (command) {
 
