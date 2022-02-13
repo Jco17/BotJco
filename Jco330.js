@@ -102,32 +102,32 @@ client.sendMessage(from, audio, MessageType.audio, {quoted: jco, mimetype: 'audi
 break   
                 
 case 'botones':
-boton(from, 'Hola', `${pushname}`, [{buttonId: 'b1', buttonText: {displayText: 'Click Aqui'}, type: 1}])           
+boton(from, 'Hola, quieres ver los creditos🤔? (presiona el boton)', `${pushname}`, [{buttonId: 'b1', buttonText: {displayText: '.creditos'}, type: 1}])           
 break
                 
-case 'lista':
+case '.creditos':
 let lista = client.prepareMessageFromContent(from,{
 "listMessage": {
 "title": `${pushname}`,
-"description": `Este es un Mensaje de lista`,
-"buttonText": "Click Aqui",
+"description": `Hola aqui los creditos del creador del bot (𝕵.𝕮.𝕺)✅`,
+"buttonText": "Click Aqui🤪",
 "listType": "SINGLE_SELECT",
 "sections": [
-{ "title": `Seccion 1`,
+{ "title": `Canal del creador✅`,
 "rows": [
 {
-"title": 'Lista 1',
-"description": 'Desc 1',
+"title": 'Youtube',
+"description": 'https://www.youtube.com/channel/UC06GENsja9Eq5fQlvSIhXOQ',
 "rowId": `row1`
 }
 ]
 },
 {
-"title": `Seccion 2`,
+"title": `Contactar`,
 "rows": [
 {
-"title": 'Lista 2',
-"description": 'Desc 2',
+"title": 'Numero',
+"description": 'wa.me/19123964481',
 "rowId": `row 2`
 }
 ]    
