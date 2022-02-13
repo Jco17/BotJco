@@ -112,8 +112,7 @@ client.sendMessage(from, audio, MessageType.audio, {quoted: jco, mimetype: 'audi
 break   
                 
 case 'menu':
-menu =
-`вíєnvєnídσ αl mєnu
+menu = `вíєnvєnídσ αl mєnu
   
   ┌─❑「 INFO CLIENT 」
 │
@@ -130,7 +129,6 @@ menu =
 ││  𝘱𝘰𝘳 𝘥𝘦𝘧𝘦𝘤𝘵𝘰 : self
 │└────────────┈ ⳹
 │「 BUGS MENU 」`
-client.sendMessage(from, { contentText: `${menu}`})
 break              
                 
 case 'creditos':
