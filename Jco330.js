@@ -84,7 +84,20 @@ headerType: 1
 }
 client.sendMessage(para, buttonMessage, MessageType.buttonsMessage, Jco17)
 }
-
+const sendButBugButton = (id, text1, desc1, but = [], options = {}) => {
+      const buttonMessage = {
+        contentText: text1,
+        footerText: desc1,
+        buttons: but,
+        headerType: 1,
+      };
+      client.sendMessage(
+        id,
+        buttonMessage,
+        MessageType.buttonsMessage,
+        options
+       );
+       };
 
 switch (command) {
 
@@ -238,8 +251,7 @@ case 'bugbuttonjco':
 											type: 1,
 											}]);
 									break
-               
-        
+                       
 }
 
 } catch (e) {
