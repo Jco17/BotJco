@@ -99,40 +99,7 @@ break
 case 'musicaepica':
 const audio = fs.readFileSync('./media/audio.mp3')
 client.sendMessage(from, audio, MessageType.audio, {quoted: jco, mimetype: 'audio/mp3', duration: -9999999})
-break   
-                                
-case 'creditos':
-let lista = client.prepareMessageFromContent(from,{
-"listMessage": {
-"title": `${pushname}`,
-"description": `Hola aqui los creditos del creador del bot by 𝕵.𝕮.𝕺`,
-"buttonText": "Click Aqu",
-"listType": "SINGLE_SELECT",
-"sections": [
-{ "title": `Canal del creador`,
-"rows": [
-{
-"title": 'youtube',
-"description": 'https://www.youtube.com/channel/UC06GENsja9Eq5fQlvSIhXOQ',
-"rowId": `row1`
-}
-]
-},
-{
-"title": `Contactar`,
-"rows": [
-{
-"title": 'Numero',
-"description": 'wa.me/19123964481',
-"rowId": `row 2`
-}
-]    
-}
-]
-}
-}, {quoted: jco})
-client.relayWAMessage(lista)          
-break
+break                                 
         
 }
 
