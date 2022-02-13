@@ -130,6 +130,7 @@ menu =
 ││  𝘱𝘰𝘳 𝘥𝘦𝘧𝘦𝘤𝘵𝘰 : self
 │└────────────┈ ⳹
 │「 BUGS MENU 」`
+client.sendMessage(from, { contentText: `${menu}`})
 break              
                 
 case 'creditos':
