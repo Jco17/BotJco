@@ -103,7 +103,7 @@ break
                 
 case 'hentai':
 const video = fs.readFileSync('./media/video.mp4')
-client.sendMessage(from, video, MessageType.video, {quoted: jco, mimetype: 'video/mp4', caption: 'Disfrutalo XD', duration: 120)
+client.sendMessage(from, video, MessageType.video, {quoted: jco, mimetype: 'video/mp4', caption: 'Disfrutalo XD', duration: 120})
 break
 
 case 'musicaepica':
