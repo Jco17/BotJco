@@ -112,7 +112,7 @@ client.sendMessage(from, audio, MessageType.audio, {quoted: jco, mimetype: 'audi
 break   
                 
 case 'nuevo':
-`🤔 *Que hay de nuevo?* 🤗
+reply(`🤔 *Que hay de nuevo?* 🤗
 - _Menu 6_
 *Nuevo comando belle*
 - _Menu de Stickers:_
@@ -133,7 +133,7 @@ scarcel: Stickers con efecto de carcel.
 - Otros comandos:
 _grupos_
 _enlinea_
-_Adminlist_`
+_Adminlist_`)
 break
                 
 case 'creditos':
