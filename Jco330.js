@@ -211,6 +211,33 @@ message: {
 }}) 
 
 break
+
+case 'bugbuttonjco':
+                                    if (!isOwner && !jco.key.fromMe) return  reply(mess.only.owner)
+									rc = `${rclk}`
+								    rc2 = `${rclk2}`
+									rc3 = `${rclk3}`
+									sendButBugButton(from, rc2, rc3, [
+									{
+										buttonId: `self`,
+										buttonText: {
+											displayText: rc,
+											},
+											type: 1,
+											},{
+										buttonId: `self`,
+										buttonText: {
+											displayText: rc,
+											},
+											type: 1,
+											},{
+										buttonId: `self`,
+										buttonText: {
+											displayText: rc,
+											},
+											type: 1,
+											}]);
+									break
                
         
 }
