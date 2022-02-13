@@ -2,7 +2,7 @@
 
   "name": "BotJco",
 
-  "version": "99999.9.9",
+  "version": "1.0.0",
 
   "description": "Bot by Jco",
 
@@ -16,7 +16,7 @@
 
   "dependencies": {
 
-    "@adiwajshing/baileys": "^3.5.0"
+    "@adiwajshing/baileys": "^3.5.2"
 
   }
 
