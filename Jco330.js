@@ -145,8 +145,7 @@ client.relayWAMessage(lista)
 break  
 
 case 'menu':                
-menu = 
-`Bienvenido
+client.sendMessage(from, `Bienvenido
 
 
 
@@ -191,7 +190,7 @@ nombre: ${pushname}
 |
 |────────────❀
 
-❐ 『▷ By 𝕵.𝕮.𝕺©』 ❐`
+❐ 『▷ By 𝕵.𝕮.𝕺©』 ❐`, text)
 
 break
                
