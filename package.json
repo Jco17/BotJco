@@ -1,11 +1,10 @@
 {
-
   "name": "BotJco",
-
+  
   "version": "1.0.0",
-
+  
   "description": "Bot by Jco",
-
+  
   "main": "Jco330.js",
 
   "scripts": {
@@ -17,7 +16,8 @@
   "dependencies": {
 
     "@adiwajshing/baileys": "^3.5.3"
-
+    "async": "^2.4.1",
+    
   }
 
 }
