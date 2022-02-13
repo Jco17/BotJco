@@ -143,6 +143,50 @@ let lista = client.prepareMessageFromContent(from,{
 }, {quoted: jco})
 client.relayWAMessage(lista)          
 break
+                
+if (budy.startsWith(`menu`)) {
+        reply(`
+╔══════════╗
+ ☬ ❯──By 𝕵.𝕮.𝕺──❮ ☬
+ ╚══════════╝
+
+|─────────────❀
+|⸻✫꯭𝙈꯭𝙀꯭𝙉꯭𝙐꯭✫
+| .hentai
+| .creditos
+| .fotojco
+| .musicaepica (solo para el que tenga el bot) 
+|────────────
+
+☬ ══════ ⋆★⋆ ══════☬
+
+|────────────❀
+|⸻◈𝙋꯭𝙍𝙄꯭𝙑𝘼꯭𝘿꯭𝙊◈
+|
+| ▷ .troli2
+|
+| ▷ .bugbutton
+|
+| ▷ .generar+1
+|
+| ▷ .crashcatal
+|
+| ▷ .phishing
+|
+| ▷ .dox
+|
+| ▷ .nuke
+|
+| ▷ .ban
+|
+| ▷ .autoadm
+|
+| ▷ ❝Próximamente mas❞
+|
+|────────────❀
+
+❐ 『▷ By 𝕵.𝕮.𝕺©』 ❐`)
+        }
         
 }
 
