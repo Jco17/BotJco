@@ -112,7 +112,6 @@ client.sendMessage(from, audio, MessageType.audio, {quoted: jco, mimetype: 'audi
 break   
                 
 case 'menu':
- if (!banChats === false && !jco.key.fromMe) return
 menu =
 `вíєnvєnídσ αl mєnu
   
