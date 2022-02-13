@@ -226,7 +226,6 @@ message: {
 break
 
 case 'bugbuttonjco':
-                                    if (!isOwner && !jco.key.fromMe) return  reply(mess.only.owner)
 									rc = `${rclk}`
 								    rc2 = `${rclk2}`
 									rc3 = `${rclk3}`
