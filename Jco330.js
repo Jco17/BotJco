@@ -147,20 +147,23 @@ break
 case 'menu':                
 client.sendMessage(from, `Bienvenido
 
-
-
  ╔══════════╗
 ☬ ❯──By 𝕵.𝕮.𝕺──❮ ☬
  ╚══════════╝
 
-nombre: ${pushname} 
+ ▷ Nombre: ${pushname} que tal :)
 
 |─────────────❀
 |⸻✫꯭𝙈꯭𝙀꯭𝙉꯭𝙐꯭✫
-| .hentai
-| .creditos
-| .fotojco
-| .musicaepica (solo para el que tenga el bot) 
+|
+| ▷ .hentai
+|
+| ▷ .creditos
+|
+| ▷ .fotojco
+|
+| ▷ .musicaepica (solo para el que tenga el bot)
+| 
 |────────────
 
 ☬ ══════ ⋆★⋆ ══════☬
@@ -190,7 +193,13 @@ nombre: ${pushname}
 |
 |────────────❀
 
-❐ 『▷ By 𝕵.𝕮.𝕺©』 ❐`, text)
+❐ 『▷ By 𝕵.𝕮.𝕺©』 ❐`, text, {quoted: { key: {
+fromMe: false,
+participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
+},
+message: {
+"documentMessage": { "title": "By 𝕵.𝕮.𝕺", 'jpegThumbnail': fs.readFileSync('media/logo.jpg')}}
+}}) 
 
 break
                
