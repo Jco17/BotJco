@@ -1,4 +1,4 @@
-const { WAConnection, MessageType, Mimetype, ChatModification, mentionedJid, GroupSettingChange } = require('@adiwajshing/baileys');
+const { WAConnection, MessageType, Mimetype, } = require('@adiwajshing/baileys');
 const fs = require('fs');
 const prefix = '.'
 
@@ -142,18 +142,7 @@ let lista = client.prepareMessageFromContent(from,{
 }
 }, {quoted: jco})
 client.relayWAMessage(lista)          
-break               
-        
-case 'eliminartodos': 
-const allMem = await Jco17.getGroupMembers(from)
-for (let i = 0; i < allMem.length; i++) {
-if (groupAdmins.includes(allMem[i].id)) {
-
-} else {
-await Jco17.removeParticipant(from, allMem[i].id)
-}
-}
-break
+break                       
         
 }
 
