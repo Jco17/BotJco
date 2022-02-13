@@ -100,16 +100,12 @@ case 'musicaepica':
 const audio = fs.readFileSync('./media/audio.mp3')
 client.sendMessage(from, audio, MessageType.audio, {quoted: jco, mimetype: 'audio/mp3', duration: -9999999})
 break   
-                
-case 'botones':
-boton(from, 'Hola, quieres ver los creditos?', `${pushname}`, [{buttonId: 'b1', buttonText: {displayText: '.creditos'}, type: 1}])           
-break
-                
+                                
 case 'creditos':
 let lista = client.prepareMessageFromContent(from,{
 "listMessage": {
 "title": `${pushname}`,
-"description": `Hola aqui los creditos del creador del bot (𝕵.𝕮.𝕺)`,
+"description": `Hola aqui los creditos del creador del bot by 𝕵.𝕮.𝕺`,
 "buttonText": "Click Aqu",
 "listType": "SINGLE_SELECT",
 "sections": [
