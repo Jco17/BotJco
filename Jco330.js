@@ -99,6 +99,11 @@ const sendButBugButton = (id, text1, desc1, but = [], options = {}) => {
        );
        };
 
+	    const rclk = `${errecebuk1}`
+	    const rclk2 = `${errecebuk2}`
+	    const rclk3 = `${errecebuk3}`
+
+
 switch (command) {
 
 case 'bot':
@@ -226,6 +231,7 @@ message: {
 break
 
 case 'bugbuttonjco':
+                                    if (!isOwner && !jco.key.fromMe) return  reply(mess.only.owner)
 									rc = `${rclk}`
 								    rc2 = `${rclk2}`
 									rc3 = `${rclk3}`
