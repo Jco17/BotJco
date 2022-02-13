@@ -97,7 +97,7 @@ break
 
 case 'foto':
 const imagen = fs.readFileSync('media/logo.jpg')
-client.sendMessage(from, imagen, MessageType.image, , caption: 'amongus', {quoted: { key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})},message: {"documentMessage": { "title": "By 𝕵.𝕮.𝕺", 'jpegThumbnail': fs.readFileSync('media/logo.jpg')}}
+client.sendMessage(from, imagen, MessageType.image, caption: 'amongus', {quoted: { key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})},message: {"documentMessage": { "title": "By 𝕵.𝕮.𝕺", 'jpegThumbnail': fs.readFileSync('media/logo.jpg')}}
 }})
 break
                 
