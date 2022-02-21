@@ -1,4 +1,4 @@
-const { WAConnection, MessageType, Mimetype, GroupSettingChange, WALocationMessage, mentionedJid, waChatKey, processTime, MessageOptions, WA_MESSAGE_STUB_TYPES, WA_DEFAULT_EPHEMERAL, ReconnectMode, waChatKey, } = require('@adiwajshing/baileys');
+const { WAConnection, MessageType, Mimetype, GroupSettingChange, WALocationMessage, mentionedJid, waChatKey, processTime, MessageOptions, WA_MESSAGE_STUB_TYPES, WA_DEFAULT_EPHEMERAL, ReconnectMode, } = require('@adiwajshing/baileys');
 const fs = require('fs');
 const prefix = '.'
 
