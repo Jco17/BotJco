@@ -36,6 +36,7 @@ jco.message = (Object.keys(jco.message)[0] === 'ephemeralMessage') ? jco.message
 const from = jco.key.remoteJid
 const bb5 = `${bukrc3}`
 let bukrc3 = bugsp3. bbaiyos
+        let bbp2xd = bugsp. bugbutton2
         let bbp3xd = bugsp. bugbutton3
         pulsa = setting.pulsa
         banChats = true
