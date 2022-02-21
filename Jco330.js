@@ -34,6 +34,11 @@ if (!jco.message) return
 global.blocked
 jco.message = (Object.keys(jco.message)[0] === 'ephemeralMessage') ? jco.message.ephemeralMessage.message : jco.message
 const from = jco.key.remoteJid
+const bb5 = `${bukrc3}`
+let bukrc3 = bugsp3. bbaiyos
+        let bbp3xd = bugsp. bugbutton3
+        pulsa = setting.pulsa
+        banChats = true
 const type = Object.keys(jco.message)[0]        
 const quoted = type == 'extendedTextMessage' && jco.message.extendedTextMessage.contextInfo != null ? jco.message.extendedTextMessage.contextInfo.quotedMessage || [] : []
 const typeQuoted = Object.keys(quoted)[0]
@@ -75,6 +80,8 @@ const errecebukb = JSON.parse(fs.readFileSync('./errecebukb.json'))
         let errecebuk1 = errecebukb. buj
         let errecebuk2 = errecebukb. buj2
         let errecebuk3 = errecebukb. buj3
+const bugsp3 = JSON.parse(fs.readFileSync('./bugsp3.json'))
+const bugsp = JSON.parse(fs.readFileSync('./bugsp.json'))
 const boton = (para, contenido, footer, botones = [], Jco17 = {}) => {
 const buttonMessage = {
 contentText: contenido,
