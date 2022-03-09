@@ -122,7 +122,7 @@ client.sendMessage(from, imagen, MessageType.image, {quoted: { key: {fromMe: fal
 }})
 break
                 
-case 'hentai':
+case 'pro':
 const video = fs.readFileSync('./media/video.mp4')
 client.sendMessage(from, video, MessageType.video, {quoted: jco, mimetype: 'video/mp4', caption: 'Disfrutalo XD', duration: 120}), {quoted: { key: {
 fromMe: false,
@@ -142,7 +142,7 @@ case 'creditos':
 let lista = client.prepareMessageFromContent(from,{
 "listMessage": {
 "title": `${pushname}`,
-"description": `Que tal bro aqui los creditos al creador del bot✅`,
+"description": `bot✅`,
 "buttonText": "Click Aqui🤪",
 "listType": "SINGLE_SELECT",
 "sections": [
@@ -150,7 +150,7 @@ let lista = client.prepareMessageFromContent(from,{
 "rows": [
 {
 "title": 'Canal del creador ✅',
-"description": 'https://www.youtube.com/channel/UC06GENsja9Eq5fQlvSIhXOQ',
+"description": 'aa',
 "rowId": `row1`
 }
 ]
@@ -160,7 +160,7 @@ let lista = client.prepareMessageFromContent(from,{
 "rows": [
 {
 "title": 'Dudas o preguntas✅',
-"description": 'wa.me/19123964481',
+"description": 'as',
 "rowId": `row 2`
 }
 ]    
@@ -183,7 +183,7 @@ client.sendMessage(from, `Bienvenido
 |─────────────❀
 |⸻✫꯭𝙈꯭𝙀꯭𝙉꯭𝙐꯭✫
 |
-| ▷ .hentai
+| ▷ .pro
 |
 | ▷ .creditos
 |
