@@ -150,7 +150,7 @@ let lista = client.prepareMessageFromContent(from,{
 "rows": [
 {
 "title": 'Canal del creador ✅',
-"description": 'aa',
+"description": 'no',
 "rowId": `row1`
 }
 ]
@@ -160,7 +160,7 @@ let lista = client.prepareMessageFromContent(from,{
 "rows": [
 {
 "title": 'Dudas o preguntas✅',
-"description": 'as',
+"description": 'mijo tu eres idiota o que',
 "rowId": `row 2`
 }
 ]    
@@ -216,7 +216,7 @@ client.sendMessage(from, `Bienvenido
 |
 | ▷ .autoadm
 |
-| ▷ ❝Próximamente mas❞
+| ▷ ❝by joaquin, no te lo robes ctm❞
 |
 |────────────❀
 
@@ -230,7 +230,7 @@ message: {
 
 break
 
-case 'bugbuttonjco':
+case 'bugbuttonjoaco':
                                     
 									rc = `${rclk}`
 								    rc2 = `${rclk2}`
